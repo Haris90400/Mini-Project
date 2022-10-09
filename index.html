@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TOXIC COMMENT CLASSIFIER</title>
+  <script type="text/javascript">
+    function checkforblank() {
+      if (document.getElementById('message').value == "") {
+        alert('Please Enter a Comment!');
+        return false;
+
+      }
+    }
+  </script>
+  <style media="screen">
+    textarea {
+      width: 40%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+    }
+  </style>
+
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+  <table cellspacing="100">
+    <tr>
+      <td><img src="p1.png" alt=""></td>
+      <td>
+        <h1><strong>TOXIC COMMENT CLASSIFIER</strong></h1>
+        <h2>(NATURAL LANGUAGE PROCESSING)</h2>
+      </td>
+      <td><img src="p2.jpg" alt=""></td>
+
+    </tr>
+  </table>
+
+  <center>
+
+    <hr>
+    <br>
+    </br>
+
+
+    <h3>The model classifies text into 5 categories:<em><strong> sever_toxicity , obscene, threat , insult , identity_hate.</strong></em></h3>
+
+    <br>
+    <div class="input-conatainer">
+      <h2 id="input">Enter the comment to be classified</h2>
+      <textarea id="message" name="message" rows="8" cols="70"></textarea>
+      <br>
+      <table cellspacing="10">
+        <tr>
+          <br>
+
+          <td>
+            <form method="post" action="output.html" onsubmit="return checkforblank()">
+
+
+
+              <input type="submit" class="btn btn1" />
+
+            </form>
+          </td>
+          <td><button id="btn" class="btn btn2">Reset</button></td>
+          <script src="index.js"></script>
+
+
+
+  </center>
+  </tr>
+  </table>
+  </div>
+
+
+
+
+
+
+  <br>
+
+  <br>
+  <hr>
+
+
+  </center>
+</body>
+
+</html>
